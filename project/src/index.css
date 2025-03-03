@@ -1,0 +1,299 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rainbow text effect */
+.rainbow-text {
+  background: linear-gradient(
+    to right,
+    #F20574,
+    #BF04B3,
+    #9904D9,
+    #F2A30F,
+    #F2780C
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 8s linear infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Modern marketing tech background */
+.animated-bg {
+  background: linear-gradient(135deg, #F20574, #9904D9);
+  overflow: hidden;
+}
+
+.marketing-elements {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(242, 163, 15, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(242, 120, 12, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(191, 4, 179, 0.3) 0%, transparent 50%);
+  filter: blur(60px);
+  animation: floatingElements 15s ease-in-out infinite alternate;
+}
+
+.interactive-dots {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: dotsMove 20s linear infinite;
+  opacity: 0.5;
+}
+
+.interactive-dots::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: dotsMove 15s linear infinite reverse;
+  opacity: 0.3;
+}
+
+/* Services section background */
+.services-bg {
+  background: linear-gradient(135deg, rgba(242, 5, 116, 0.05), rgba(153, 4, 217, 0.05));
+  overflow: hidden;
+}
+
+.services-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(90deg, transparent 95%, rgba(242, 5, 116, 0.1) 95%),
+    linear-gradient(transparent 95%, rgba(242, 5, 116, 0.1) 95%);
+  background-size: 30px 30px;
+  animation: serviceBg 30s linear infinite;
+}
+
+.services-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(242, 163, 15, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(242, 120, 12, 0.1) 0%, transparent 50%);
+  filter: blur(30px);
+  animation: serviceElements 20s ease-in-out infinite alternate;
+}
+
+/* About section background */
+.about-bg {
+  background: linear-gradient(135deg, rgba(242, 5, 116, 0.03), rgba(153, 4, 217, 0.03));
+  overflow: hidden;
+}
+
+.about-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(45deg, transparent 95%, rgba(242, 5, 116, 0.1) 95%),
+    linear-gradient(-45deg, transparent 95%, rgba(242, 5, 116, 0.1) 95%);
+  background-size: 30px 30px;
+  animation: aboutBg 30s linear infinite;
+}
+
+.about-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 30% 30%, rgba(242, 163, 15, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(242, 120, 12, 0.08) 0%, transparent 50%);
+  filter: blur(30px);
+  animation: aboutElements 20s ease-in-out infinite alternate;
+}
+
+/* Work section background */
+.work-bg {
+  background: linear-gradient(135deg, rgba(242, 5, 116, 0.02), rgba(153, 4, 217, 0.02));
+  overflow: hidden;
+}
+
+.work-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(30deg, transparent 95%, rgba(242, 5, 116, 0.1) 95%),
+    linear-gradient(-30deg, transparent 95%, rgba(242, 5, 116, 0.1) 95%);
+  background-size: 40px 40px;
+  animation: workBg 30s linear infinite;
+}
+
+.work-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 40% 40%, rgba(242, 163, 15, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 60% 60%, rgba(242, 120, 12, 0.05) 0%, transparent 50%);
+  filter: blur(30px);
+  animation: workElements 20s ease-in-out infinite alternate;
+}
+
+/* Contact section background */
+.contact-bg {
+  background: linear-gradient(135deg, rgba(242, 5, 116, 0.04), rgba(153, 4, 217, 0.04));
+  overflow: hidden;
+}
+
+.contact-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(60deg, transparent 95%, rgba(242, 5, 116, 0.1) 95%),
+    linear-gradient(-60deg, transparent 95%, rgba(242, 5, 116, 0.1) 95%);
+  background-size: 35px 35px;
+  animation: contactBg 30s linear infinite;
+}
+
+.contact-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(242, 163, 15, 0.07) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(242, 120, 12, 0.07) 0%, transparent 50%);
+  filter: blur(30px);
+  animation: contactElements 20s ease-in-out infinite alternate;
+}
+
+/* Animation keyframes */
+@keyframes dotsMove {
+  0% { transform: translateX(0) translateY(0); }
+  100% { transform: translateX(30px) translateY(30px); }
+}
+
+@keyframes floatingElements {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.5) rotate(180deg); }
+  100% { transform: scale(1) rotate(360deg); }
+}
+
+@keyframes serviceBg {
+  0% { transform: translateX(0) translateY(0); }
+  100% { transform: translateX(30px) translateY(30px); }
+}
+
+@keyframes serviceElements {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes aboutBg {
+  0% { transform: translateX(0) translateY(0); }
+  100% { transform: translateX(-30px) translateY(30px); }
+}
+
+@keyframes aboutElements {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(20px) rotate(180deg); }
+}
+
+@keyframes workBg {
+  0% { transform: translateX(0) translateY(0); }
+  100% { transform: translateX(30px) translateY(-30px); }
+}
+
+@keyframes workElements {
+  0% { transform: translateX(0) rotate(0deg); }
+  100% { transform: translateX(20px) rotate(-180deg); }
+}
+
+@keyframes contactBg {
+  0% { transform: translateX(0) translateY(0); }
+  100% { transform: translateX(-30px) translateY(-30px); }
+}
+
+@keyframes contactElements {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-20px) rotate(180deg); }
+}
+
+/* Utility animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 0.6s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.6s ease-out forwards;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.3s ease-out forwards;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .mobile-stack {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
