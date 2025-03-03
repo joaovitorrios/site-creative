@@ -38,15 +38,11 @@ Sinta-se à vontade para contribuir com este projeto! Se você tem alguma ideia,
 5. Envie para o repositório remoto: `git push origin minha-nova-feature`
 6. Crie um pull request.
 
-## 📜 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## 📞 Contato
 
 Caso tenha alguma dúvida ou sugestão, entre em contato comigo:
 
-- Email: joao@exemplo.com
+- Email: joaovitorriosdev@gmail.com
 - LinkedIn: [João Vitor](https://www.linkedin.com/in/joaovitorrios/)
 - Portfólio: [João Vitor - Portfólio](https://joaovitorriosdev.netlify.app)
 
